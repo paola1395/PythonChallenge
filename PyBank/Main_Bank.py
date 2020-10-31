@@ -1,5 +1,6 @@
 import os
 import csv
+import sys
 
 #Read and import csv from Resources folder
 PyBank_budget_data=os.path.join("Resources/PyBank_budget_data.csv")
@@ -49,6 +50,17 @@ with open (PyBank_budget_data, 'r') as csv_file:
         total=total+profit
         month_count += 1
 
+print("Financial Analysis")
+print("------------------------------")
+print(f'Total Months: {month_count}')
+print(f'Total: ${total: 0,.0f}')
+print(f'Average: ${average(total_change): 0,.0f}')
+print(f'Greatest Increase: {max_month}, ${max_value: 0,.0f}')
+print(f'Greatest Decrease: {min_month}, ${min_value: 0,.0f}')
+
+stdoutOrigin=sys.stdout 
+txtPath = os.path.join("Analysis/financial_analysis.txt")
+sys.stdout = open(txtPath, "w")
 print("Financial Analysis")
 print("------------------------------")
 print(f'Total Months: {month_count}')
