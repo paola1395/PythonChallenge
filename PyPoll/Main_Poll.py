@@ -43,25 +43,25 @@ with open(csvpath) as csvfile:
         
         #Print election results
 
-        print("Election Results")
-        print("-------------------------")
-        print("Candidates:", candidates_list[0] + ",", candidates_list[1] + ",", candidates_list[2] + ",", candidates_list[3])
-        print("-------------------------")
-        print("Total Votes:", votes)
-        print("-------------------------")
+    print("Election Results")
+    print("-------------------------")
+    print("Candidates:", candidates_list[0] + ",", candidates_list[1] + ",", candidates_list[2] + ",", candidates_list[3])
+    print("-------------------------")
+    print("Total Votes:", votes)
+    print("-------------------------")
 
-        k_percent=round(((Khan_votes/votes)*100),2)
-        print("Khan:", str(k_percent)+"%", "(" + str(Khan_votes)+ ")")
-        c_percent=round(((Correy_votes/votes)*100),2)
-        print("Correy:", str(c_percent)+"%", "(" + str(Correy_votes)+ ")")
-        l_percent=round(((Li_votes/votes)*100),2)
-        print("Li:", str(l_percent)+"%", "(" + str(Li_votes)+ ")")
-        o_percent=round(((Otooley_votes/votes)*100),2)
-        print("O'Tooley:", str(o_percent)+"%", "(" + str(Otooley_votes)+ ")")
-        print("-------------------------")
+    k_percent=round(((Khan_votes/votes)*100),2)
+    print("Khan:", str(k_percent)+"%", "(" + str(Khan_votes)+ ")")
+    c_percent=round(((Correy_votes/votes)*100),2)
+    print("Correy:", str(c_percent)+"%", "(" + str(Correy_votes)+ ")")
+    l_percent=round(((Li_votes/votes)*100),2)
+    print("Li:", str(l_percent)+"%", "(" + str(Li_votes)+ ")")
+    o_percent=round(((Otooley_votes/votes)*100),2)
+    print("O'Tooley:", str(o_percent)+"%", "(" + str(Otooley_votes)+ ")")
+    print("-------------------------")
 
-        print(winner)
-        print("-------------------------")
+    print(winner)
+    print("-------------------------")
 
 #text file
 stdoutOrigin=sys.stdout 
